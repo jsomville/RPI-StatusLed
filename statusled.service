@@ -1,0 +1,6 @@
+[Unit]
+Description=statusled service
+
+[Service]
+Type=simple
+ExecStart=python3 /lib/systemd/system/serviceled.py
