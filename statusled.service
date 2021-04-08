@@ -3,4 +3,7 @@ Description=statusled service
 
 [Service]
 Type=simple
-ExecStart=python3 /lib/systemd/system/serviceled.py
+ExecStart=python3 /usr/bin/statusled/serviceled.py
+
+[Install]
+WantedBy=multi-user.target
